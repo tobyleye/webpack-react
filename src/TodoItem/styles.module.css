@@ -1,6 +1,7 @@
 .todoItem{
     background: #fff;
     padding: 15px;
+    padding-right: 30px;
     border: 1px solid #ccc;
     display: flex;
     align-items: center;
@@ -15,11 +16,12 @@
 .todoItem .delete {
     border: none;
     background: none;
-    color: red;
     position: absolute;
-    font-size: 18px;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
+    font-size: 15px;
+    right: 0;
+    top: 0;
+    padding: 4px 8px;
+    background: red;
+    color: #fff;
     cursor: pointer;
 }

@@ -1,7 +1,20 @@
 const path = require("path");
+const loaderUtils = require("loader-utils");
 const Html5WebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+const getLocalIdent = (context, localIdentName, localName, options) => {
+  // create hash based on the file path and className
+  // will be unique across a project and close to globally unique
+  const hash = loaderUtils.getHashDigest(
+    path.relative(context.rootContext, context.resourcePath) + localName,
+    "md4",
+    "base64",
+    5
+  );
+  return hash;
+};
 
 module.exports = {
   mode: "production",
@@ -34,8 +47,7 @@ module.exports = {
               importLoaders: 1,
               modules: {
                 auto: true,
-                localIdentName: "[hash:base64:5]",
-                localIdentHashPrefix: "hash",
+                getLocalIdent,
               },
             },
           },

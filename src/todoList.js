@@ -8,9 +8,10 @@ export default function TodoList({ todos, onComplete, onDelete }) {
       {todos.map((todo, idx) => (
         <TodoItem
           key={idx}
+          id={idx}
           {...todo}
-          onComplete={() => onComplete(idx)}
-          onDelete={() => onDelete(idx)}
+          onDelete={onDelete}
+          onComplete={onComplete}
         />
       ))}
     </ul>
