@@ -1,0 +1,25 @@
+.todoItem{
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.todoItem .checkMark {
+    margin-left: 10px;
+}
+
+.todoItem .delete {
+    border: none;
+    background: none;
+    color: red;
+    position: absolute;
+    font-size: 18px;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

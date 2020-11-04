@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    border: 10px solid pink;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.formArea {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.textField{
+    height: 80px;
+    resize: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 1rem;
+    width: 100%;
+    font-family: inherit;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+    margin-bottom: 10px;
+}
+
+.todoContainer {
+    max-width: 400px;
+    margin: 2rem auto;
+    
+}
+
+.submitBtn {
+    border: none;
+    outline:none;
+    height: 40px;
+    font-size: 16px;
+    font-family: inherit;
+    padding: 0 18px;
+    border-radius: 3px;
+    background: green;
+    color: #fff;
+}
+
+.header {
+    margin-bottom: 2rem;
+
+    h1, h3 {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.65rem;
+        margin-bottom: 5px;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #666;
+    }
+}
