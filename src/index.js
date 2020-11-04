@@ -31,7 +31,7 @@ function TodoApp() {
     <div className={styles.todoContainer}>
       <header className={styles.header}>
         <h1>Todoer</h1>
-        <h3>Add your next todo gracefully. (click to mark as completed)</h3>
+        <h3>Add your next todo gracefully. (click to mark as complete)</h3>
       </header>
       <div className={styles.formArea}>
         <textarea
