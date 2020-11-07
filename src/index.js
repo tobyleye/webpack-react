@@ -1,7 +1,7 @@
 import * as React from "react";
 import { render } from "react-dom";
 import styles from "./style.module.css";
-import TodoList from "./todoList";
+import TodoList from "./TodoList";
 
 function TodoApp() {
   const [todos, setTodos] = React.useState([]);
